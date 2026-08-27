@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import aquabotLogo from "@/assets/logo.jpeg";
 import youtubeIcon from "@/assets/youtube.png";
 import linkedinIcon from "@/assets/linkedin.png";
@@ -73,19 +74,19 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <div className="space-y-2">
-              <button 
-                onClick={() => scrollToSection('solution')}
+              <Link
+                to="/about"
                 className="block text-background/80 hover:text-background transition-colors"
               >
-                Solution
-              </button>
-              <button 
-                onClick={() => scrollToSection('technology')}
+                About Us
+              </Link>
+              <Link
+                to="/solution-technology"
                 className="block text-background/80 hover:text-background transition-colors"
               >
-                Technology
-              </button>
-              <button 
+                Solution & Technology
+              </Link>
+              <button
                 onClick={() => scrollToSection('community')}
                 className="block text-background/80 hover:text-background transition-colors"
               >

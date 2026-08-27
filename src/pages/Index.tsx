@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
-import Solution from "@/components/Solution";
 import Community from "@/components/Community";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -25,7 +24,6 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Problem />
-      <Solution />
       <Community />
       <Contact />
       <Footer />

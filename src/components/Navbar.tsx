@@ -64,18 +64,13 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            <button
-              onClick={() => scrollToSection('solution')}
+            <Link
+              to="/solution-technology"
+              onClick={() => setIsMenuOpen(false)}
               className={`transition-colors ${solid ? 'text-muted-foreground hover:text-foreground' : 'text-white/80 hover:text-white'}`}
             >
-              Solution
-            </button>
-            <button
-              onClick={() => scrollToSection('technology')}
-              className={`transition-colors ${solid ? 'text-muted-foreground hover:text-foreground' : 'text-white/80 hover:text-white'}`}
-            >
-              Technology
-            </button>
+              Solution & Technology
+            </Link>
             <button
               onClick={() => scrollToSection('community')}
               className={`transition-colors ${solid ? 'text-muted-foreground hover:text-foreground' : 'text-white/80 hover:text-white'}`}
@@ -114,19 +109,14 @@ const Navbar = () => {
               >
                 About Us
               </Link>
+              <Link
+                to="/solution-technology"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
+              >
+                Solution & Technology
+              </Link>
               <button
-                onClick={() => scrollToSection('solution')}
-                className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                Solution
-              </button>
-              <button 
-                onClick={() => scrollToSection('technology')}
-                className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
-              >
-                Technology
-              </button>
-              <button 
                 onClick={() => scrollToSection('community')}
                 className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
               >

@@ -123,13 +123,14 @@ const Contact = () => {
           <div className="space-y-8">
             <div className="bg-gradient-water rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">
-                EAI - Bridging the Gap
+                AquaBot - Bridging the Gap
               </h3>
               <p className="text-white/90 mb-6 leading-relaxed">
-                EAI is bridging the gap between the need and the supply through our diverse 
-                capacity in services, water products, and specialty programs like the AquaBot.
+                AquaBot is bridging the gap between need and supply, providing sustainable access
+                to safe water, sanitation, and hygiene for rural and underserved communities in
+                Kenya and beyond.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="bg-white/20 rounded-full p-3">
@@ -137,27 +138,27 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-medium">Email</div>
-                    <div className="text-white/90">info@aquabot.com</div>
+                    <div className="text-white/90">info@aquabots.org</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="bg-white/20 rounded-full p-3">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-medium">Phone</div>
-                    <div className="text-white/90">+254 (0) 700 000 000</div>
+                    <div className="text-white/90">+254-757-594-469</div>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-4">
                   <div className="bg-white/20 rounded-full p-3">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
                     <div className="font-medium">Location</div>
-                    <div className="text-white/90">Nairobi, Kenya</div>
+                    <div className="text-white/90">Karen, Karengata Park - Nairobi County</div>
                   </div>
                 </div>
               </div>

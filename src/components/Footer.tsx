@@ -28,7 +28,7 @@ const Footer = () => {
             </button>
 
             <p className="text-background/80 leading-relaxed mb-6 max-w-md">
-              Changing the way we think about water. AquaBot brings sustainable,
+              Transforming the way we think about water. AquaBot brings sustainable,
               smart water access to communities across Africa through revolutionary
               technology and community empowerment.
             </p>

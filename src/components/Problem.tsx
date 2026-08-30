@@ -29,11 +29,12 @@ const Problem = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
-            The Global Water Crisis
+            The Water Crisis in Kenya
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Water is accessible almost everywhere in developed countries, yet 2.6 billion people worldwide 
-            lack access to clean water. That's almost eight times the population of the United States.
+            The Constitution of Kenya guarantees every citizen the right to clean and safe water, yet a 2019
+            WASREB guideline found that 33% of rural water systems in Kenya are non-functional, while a
+            further 67% begin to deteriorate within just 3-5 years of construction.
           </p>
         </div>
 
@@ -63,9 +64,9 @@ const Problem = () => {
                 Faulty Infrastructure
               </h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Over the years billions of dollars have been spent to address water problems, 
-                yet the problems still exist. There are over 50,000 dysfunctional water supply 
-                infrastructures across Africa.
+                Rural Kenya has long relied on the community management model, handing full
+                operation and maintenance of water systems over to volunteer committees with
+                little technical or financial capacity to run them.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Many are failing for one simple and avoidable reason: <strong>Lack of sustainability.</strong>
@@ -74,23 +75,25 @@ const Problem = () => {
             
             <div className="space-y-6">
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6">
-                <h4 className="font-semibold text-destructive mb-2">Poor Technology</h4>
+                <h4 className="font-semibold text-destructive mb-2">Insufficient Technical Support</h4>
                 <p className="text-sm text-muted-foreground">
-                  Contractors often lack proper education and access to quality equipment
+                  Management committees often receive only a few days of training to run complex,
+                  multi-million-shilling water systems
                 </p>
               </div>
-              
+
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6">
-                <h4 className="font-semibold text-destructive mb-2">Lack of Community Engagement</h4>
+                <h4 className="font-semibold text-destructive mb-2">Limited Community Integration</h4>
                 <p className="text-sm text-muted-foreground">
-                  Projects fail without proper community participation from the beginning
+                  Projects fail without proper community participation and ownership from the beginning
                 </p>
               </div>
-              
+
               <div className="bg-destructive/10 border border-destructive/20 rounded-lg p-6">
-                <h4 className="font-semibold text-destructive mb-2">No Maintenance Support</h4>
+                <h4 className="font-semibold text-destructive mb-2">Lack of Financial Sustainability</h4>
                 <p className="text-sm text-muted-foreground">
-                  Communities lack expertise and funds for repairs and maintenance
+                  Without a funding model built for long-term upkeep, systems break down within
+                  years and communities are left waiting for outside aid
                 </p>
               </div>
               

@@ -56,14 +56,17 @@ const Community = () => {
             </h3>
             
             <p className="text-lg text-muted-foreground leading-relaxed">
-              It's a common misconception that all communities in developing countries are completely poor. 
-              In sub-Saharan Africa, between 75% and 91% of people own a cell phone, and in Kenya specifically, 
-              people spend an average of $15.00 every month on phone services.
+              Contrary to popular belief, many communities in Kenya are neither entirely impoverished nor
+              incapable of supporting sustainable water services. A comprehensive baseline survey conducted
+              across all seven AquaBot communities found that 99% of households are willing to pay for
+              reliable, safe water.
             </p>
-            
+
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Many can afford critical services like phones, electricity, and water. What they don't have 
-              is the financial ability to spend thousands of dollars up front on major infrastructure.
+              People are already paying for water, often in indirect and more costly ways, through
+              medication for waterborne illness, fuel for boiling, and lost income from hours spent
+              fetching water. AquaBot channels that existing spending into an affordable, dependable
+              system instead.
             </p>
             
             <Button variant="ocean" size="lg">

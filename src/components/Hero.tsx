@@ -18,7 +18,7 @@ const Hero = () => {
   // Hero slides data
   const heroSlides = [
     {
-      title: "Changing the way we think about",
+      title: "Transforming the way we think about",
       highlight: "water",
       subtitle: "AquaBot brings sustainable, smart water access to communities across Africa. Revolutionary technology meets community empowerment.",
       image: heroImage1

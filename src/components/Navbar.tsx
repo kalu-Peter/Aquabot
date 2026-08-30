@@ -71,6 +71,13 @@ const Navbar = () => {
             >
               Solution & Technology
             </Link>
+            <Link
+              to="/newsletter"
+              onClick={() => setIsMenuOpen(false)}
+              className={`transition-colors ${solid ? 'text-muted-foreground hover:text-foreground' : 'text-white/80 hover:text-white'}`}
+            >
+              Newsletter
+            </Link>
             <button
               onClick={() => scrollToSection('community')}
               className={`transition-colors ${solid ? 'text-muted-foreground hover:text-foreground' : 'text-white/80 hover:text-white'}`}
@@ -115,6 +122,13 @@ const Navbar = () => {
                 className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
               >
                 Solution & Technology
+              </Link>
+              <Link
+                to="/newsletter"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
+              >
+                Newsletter
               </Link>
               <button
                 onClick={() => scrollToSection('community')}

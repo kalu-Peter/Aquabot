@@ -86,6 +86,12 @@ const Footer = () => {
               >
                 Solution & Technology
               </Link>
+              <Link
+                to="/newsletter"
+                className="block text-background/80 hover:text-background transition-colors"
+              >
+                Newsletter
+              </Link>
               <button
                 onClick={() => scrollToSection('community')}
                 className="block text-background/80 hover:text-background transition-colors"

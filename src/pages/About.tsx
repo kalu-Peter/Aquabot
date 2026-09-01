@@ -9,6 +9,10 @@ import inspirationImage from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (6)
 import approachImage from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (4).jpeg";
 import whatWeDoBg from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (11).jpeg";
 import targetAreasImage from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (9).jpeg";
+import elijahPhoto from "@/assets/Elijah Nzuki.jpeg";
+import estherPhoto from "@/assets/Esther Photo.jpg";
+import boardChairPhoto from "@/assets/Board Chairman.jpeg";
+import calebPhoto from "@/assets/Wash PC.jpeg";
 
 const whatWeDo = [
   {
@@ -93,6 +97,22 @@ const benefits = [
       "The token system promotes community involvement and covers maintenance costs, potentially creating a more long term solution compared to options requiring constant external funding. Collected token fees from users are channeled towards maintenance, repairs, and potential upgrades."
   }
 ];
+
+const teamMembers = [
+  { name: "Elijah Nzuki", role: "Managing Director", photo: elijahPhoto },
+  { name: "Esther", role: "Director of Operations", photo: estherPhoto },
+  { name: null, role: "Board Chairperson", photo: boardChairPhoto },
+  { name: "Caleb Mukwabi Simiyu", role: "WASH Programme Coordinator", photo: calebPhoto }
+];
+
+const getInitials = (label: string) =>
+  label
+    .split(" ")
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
 
 const About = () => {
   useEffect(() => {
@@ -342,6 +362,43 @@ const About = () => {
                 <p className={`leading-relaxed ${index % 2 === 0 ? "text-muted-foreground" : "text-white/90"}`}>
                   {benefit.description}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Meet the Team */}
+      <section className="py-24 bg-gradient-sky">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Meet the Team</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              The people leading AquaBot's mission to bring sustainable water access to communities
+              across Kenya.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {teamMembers.map((member) => (
+              <div
+                key={member.role + (member.name ?? "")}
+                className="bg-card rounded-2xl p-8 shadow-water flex flex-col items-center text-center"
+              >
+                {member.photo ? (
+                  <img
+                    src={member.photo}
+                    alt={member.name ?? member.role}
+                    className="w-24 h-24 rounded-full object-cover mb-4 shadow-water ring-4 ring-white brightness-95 contrast-105"
+                  />
+                ) : (
+                  <div className="w-24 h-24 rounded-full bg-gradient-water text-white flex items-center justify-center text-2xl font-bold mb-4">
+                    {getInitials(member.name ?? member.role)}
+                  </div>
+                )}
+                {member.name && (
+                  <h3 className="font-semibold text-lg text-card-foreground mb-1">{member.name}</h3>
+                )}
+                <p className="text-muted-foreground">{member.role}</p>
               </div>
             ))}
           </div>

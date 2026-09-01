@@ -9,6 +9,7 @@ import inspirationImage from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (6)
 import approachImage from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (4).jpeg";
 import whatWeDoBg from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (11).jpeg";
 import targetAreasImage from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (9).jpeg";
+import founderPartnersImage from "@/assets/founder partners.jpeg";
 import elijahPhoto from "@/assets/Elijah Nzuki.jpeg";
 import estherPhoto from "@/assets/Esther Photo.jpg";
 import boardChairPhoto from "@/assets/Board Chairman.jpeg";
@@ -401,6 +402,25 @@ const About = () => {
                 <p className="text-muted-foreground">{member.role}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Founding Partners */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Founding Partners</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              AquaBot exists thanks to the vision and support of our founding partners.
+            </p>
+          </div>
+          <div className="max-w-2xl mx-auto">
+            <img
+              src={founderPartnersImage}
+              alt="AquaBot founding partners: Christian Aid Ministries, Element Access International, Brink Family, The Thirteen Foundation, and Earth & Water"
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </section>

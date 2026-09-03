@@ -78,6 +78,13 @@ const Navbar = () => {
             >
               Newsletter
             </Link>
+            <Link
+              to="/gallery"
+              onClick={() => setIsMenuOpen(false)}
+              className={`transition-colors ${solid ? 'text-muted-foreground hover:text-foreground' : 'text-white/80 hover:text-white'}`}
+            >
+              Gallery
+            </Link>
             <button
               onClick={() => scrollToSection('community')}
               className={`transition-colors ${solid ? 'text-muted-foreground hover:text-foreground' : 'text-white/80 hover:text-white'}`}
@@ -129,6 +136,13 @@ const Navbar = () => {
                 className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
               >
                 Newsletter
+              </Link>
+              <Link
+                to="/gallery"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-left text-muted-foreground hover:text-foreground transition-colors py-2"
+              >
+                Gallery
               </Link>
               <button
                 onClick={() => scrollToSection('community')}

@@ -92,6 +92,12 @@ const Footer = () => {
               >
                 Newsletter
               </Link>
+              <Link
+                to="/gallery"
+                className="block text-background/80 hover:text-background transition-colors"
+              >
+                Gallery
+              </Link>
               <button
                 onClick={() => scrollToSection('community')}
                 className="block text-background/80 hover:text-background transition-colors"

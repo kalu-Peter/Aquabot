@@ -37,6 +37,7 @@ import img17 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (1).jpeg";
 import img18 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (2).jpeg";
 import img19 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (3).jpeg";
 import img20 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (4).jpeg";
+import heroImage from "@/assets/WhatsApp Image 2026-09-08 at 23.06.47.jpeg";
 import img21 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (5).jpeg";
 import img22 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (6).jpeg";
 import img24 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.37.jpeg";
@@ -110,7 +111,11 @@ const Gallery = () => {
       <Navbar />
 
       {/* Banner */}
-      <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-water">
+      <section className="relative pt-40 pb-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImage} alt="AquaBot gallery" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/85" />
+        </div>
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="inline-flex items-center gap-2 text-white/90 mb-4">
             <Images className="w-5 h-5" />

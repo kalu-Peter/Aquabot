@@ -18,10 +18,6 @@ import {
 } from "@/components/ui/carousel";
 import { Images, ChevronDown } from "lucide-react";
 
-import elijahPhoto from "@/assets/Elijah Nzuki.jpeg";
-import estherPhoto from "@/assets/Esther Photo.jpg";
-import boardChairPhoto from "@/assets/Board Chairman.jpeg";
-import calebPhoto from "@/assets/Wash PC.jpeg";
 import img2 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (1).jpeg";
 import img3 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (2).jpeg";
 import img4 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.04 (3).jpeg";
@@ -43,23 +39,49 @@ import img19 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (3).jpeg";
 import img20 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (4).jpeg";
 import img21 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (5).jpeg";
 import img22 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (6).jpeg";
-import img23 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (7).jpeg";
-import founderPartnersImage from "@/assets/founder partners.jpeg";
-
-const teamImages = [
-  { src: elijahPhoto, alt: "Elijah Nzuki, Managing Director" },
-  { src: estherPhoto, alt: "Esther, Director of Operations" },
-  { src: boardChairPhoto, alt: "Board Chairperson" },
-  { src: calebPhoto, alt: "Caleb Mukwabi Simiyu, WASH Programme Coordinator" },
-];
+import img24 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.37.jpeg";
+import img25 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.38.jpeg";
+import img26 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.38 (1).jpeg";
+import img27 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.39.jpeg";
+import img28 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.39 (1).jpeg";
+import img29 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.40.jpeg";
+import img30 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.40 (1).jpeg";
+import img31 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.41.jpeg";
+import img32 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.43.jpeg";
+import img33 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.43 (1).jpeg";
+import img34 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.43 (2).jpeg";
+import img35 from "@/assets/WhatsApp Image 2026-09-08 at 23.00.43 (3).jpeg";
+import img36 from "@/assets/WhatsApp Image 2026-09-08 at 23.05.35.jpeg";
+import img37 from "@/assets/WhatsApp Image 2026-09-08 at 23.05.35 (1).jpeg";
+import img38 from "@/assets/WhatsApp Image 2026-09-08 at 23.05.35 (2).jpeg";
+import img39 from "@/assets/WhatsApp Image 2026-09-08 at 23.05.36.jpeg";
+import img40 from "@/assets/WhatsApp Image 2026-09-08 at 23.06.06.jpeg";
+import img41 from "@/assets/WhatsApp Image 2026-09-08 at 23.06.07.jpeg";
+import img42 from "@/assets/WhatsApp Image 2026-09-08 at 23.06.07 (1).jpeg";
+import img43 from "@/assets/WhatsApp Image 2026-09-08 at 23.06.07 (2).jpeg";
+import img44 from "@/assets/WhatsApp Image 2026-09-08 at 23.06.47.jpeg";
+import img45 from "@/assets/WhatsApp Image 2026-09-08 at 23.06.47 (1).jpeg";
+import img46 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.26.jpeg";
+import img47 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.26 (1).jpeg";
+import img48 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.27.jpeg";
+import img49 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.27 (1).jpeg";
+import img50 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.27 (2).jpeg";
+import img51 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.28.jpeg";
+import img52 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.59.jpeg";
+import img53 from "@/assets/WhatsApp Image 2026-09-08 at 23.07.59 (1).jpeg";
+import img54 from "@/assets/WhatsApp Image 2026-09-08 at 23.08.00.jpeg";
 
 const communityImages = [
   img2, img3, img4, img5, img6, img7, img8, img9, img10,
   img11, img12, img13, img14, img15, img16, img17, img18, img19, img20,
-  img21, img22, img23, founderPartnersImage,
+  img21, img22,
+  img24, img25, img26, img27, img28, img29, img30, img31, img32, img33,
+  img34, img35, img36, img37, img38, img39, img40, img41, img42, img43,
+  img44, img45, img46, img47, img48, img49, img50, img51, img52, img53,
+  img54,
 ].map((src, index) => ({ src, alt: `AquaBot community photo ${index + 1}` }));
 
-const galleryImages = [...teamImages, ...communityImages];
+const galleryImages = communityImages;
 
 const PAGE_SIZE = 20;
 

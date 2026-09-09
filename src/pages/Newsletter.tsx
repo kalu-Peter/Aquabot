@@ -11,6 +11,7 @@ import newsImage3 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (3).jpeg"
 import newsImage4 from "@/assets/WhatsApp Image 2026-08-26 at 10.38.05 (5).jpeg";
 import impactReportPdf from "@/assets/AquaBot Impact Report 2025.pdf";
 import profilePdf from "@/assets/AquaBot Profile.pdf";
+import conceptNotePdf from "@/assets/AquaBot concept note.pdf";
 
 const categories = ["All", "News", "Community", "Impact"];
 
@@ -63,6 +64,13 @@ const reports = [
       "An overview of who we are, our mission, and the AquaBot™ model for sustainable water access.",
     file: profilePdf,
     fileName: "AquaBot Profile.pdf",
+  },
+  {
+    title: "AquaBot Concept Note",
+    description:
+      "A concise summary of the AquaBot model, the problem it solves, and our approach to sustainable water access.",
+    file: conceptNotePdf,
+    fileName: "AquaBot concept note.pdf",
   },
 ];
 
@@ -166,7 +174,7 @@ const Newsletter = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {reports.map((report) => (
               <div key={report.title} className="bg-card rounded-2xl p-8 shadow-water flex flex-col">
                 <div className="text-primary mb-4">

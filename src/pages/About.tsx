@@ -101,9 +101,9 @@ const benefits = [
 
 const teamMembers = [
   { name: "Elijah Nzuki", role: "Managing Director", photo: elijahPhoto },
-  { name: "Esther", role: "Director of Operations", photo: estherPhoto },
-  { name: null, role: "Board Chairperson", photo: boardChairPhoto },
-  { name: "Caleb Mukwabi Simiyu", role: "WASH Programme Coordinator", photo: calebPhoto }
+  { name: "Esther Nyanchoka", role: "Director of Operations", photo: estherPhoto },
+  { name: null, role: "Board Chairperson and Founder", photo: boardChairPhoto },
+  { name: "Caleb Simiyu", role: "WASH Manager", photo: calebPhoto }
 ];
 
 const getInitials = (label: string) =>
@@ -406,19 +406,19 @@ const About = () => {
         </div>
       </section>
 
-      {/* Founding Partners */}
+      {/* Funding Partners */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Founding Partners</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">Our Funding Partners</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              AquaBot exists thanks to the vision and support of our founding partners.
+              AquaBot exists thanks to the vision and support of our funding partners.
             </p>
           </div>
           <div className="max-w-2xl mx-auto">
             <img
               src={founderPartnersImage}
-              alt="AquaBot founding partners: Christian Aid Ministries, Element Access International, Brink Family, The Thirteen Foundation, and Earth & Water"
+              alt="AquaBot funding partners: Christian Aid Ministries, Element Access International, Brink Family, The Thirteen Foundation, and Earth & Water"
               className="w-full h-auto"
             />
           </div>
@@ -439,7 +439,7 @@ const About = () => {
             </div>
             <div className="bg-card rounded-xl p-6 shadow-water flex flex-col items-center gap-3">
               <Phone className="w-6 h-6 text-primary" />
-              <span className="text-card-foreground">+254-757-594-469</span>
+              <span className="text-card-foreground">+254-705-449-143</span>
             </div>
             <div className="bg-card rounded-xl p-6 shadow-water flex flex-col items-center gap-3">
               <Mail className="w-6 h-6 text-primary" />

@@ -100,10 +100,10 @@ const benefits = [
 ];
 
 const teamMembers = [
-  { name: "Elijah Nzuki", role: "Managing Director", photo: elijahPhoto },
-  { name: "Esther Nyanchoka", role: "Director of Operations", photo: estherPhoto },
-  { name: null, role: "Board Chairperson and Founder", photo: boardChairPhoto },
-  { name: "Caleb Simiyu", role: "WASH Manager", photo: calebPhoto }
+  { name: "Elijah Nzuki", role: "Managing Director", photo: elijahPhoto, objectPosition: "center" },
+  { name: "Esther Nyanchoka", role: "Director of Operations", photo: estherPhoto, objectPosition: "center" },
+  { name: null, role: "Board Chairperson and Founder", photo: boardChairPhoto, objectPosition: "center" },
+  { name: "Caleb Simiyu", role: "WASH Manager", photo: calebPhoto, objectPosition: "top" }
 ];
 
 const getInitials = (label: string) =>
@@ -390,6 +390,7 @@ const About = () => {
                     src={member.photo}
                     alt={member.name ?? member.role}
                     className="w-24 h-24 rounded-full object-cover mb-4 shadow-water ring-4 ring-white brightness-95 contrast-105"
+                    style={{ objectPosition: member.objectPosition }}
                   />
                 ) : (
                   <div className="w-24 h-24 rounded-full bg-gradient-water text-white flex items-center justify-center text-2xl font-bold mb-4">
